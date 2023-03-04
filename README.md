@@ -29,7 +29,7 @@ The system consists of three major steps like any other ML system and we will be
 
 Below figure shows the overall steps carried out in the process.
 
-** Add image here **
+![](https://raw.githubusercontent.com/Atharva-Phatak/shopme/main/images/flow.png)
 
 ----
 
@@ -72,6 +72,8 @@ Below figure shows and dagster DAG for our training process.
 
 
 
+
+
 ** Add image here
 
 Nice [talk](https://www.youtube.com/watch?v=MIhF6Fh0AXw) on Dagster as an MLOps tool.
@@ -79,6 +81,9 @@ Nice [talk](https://www.youtube.com/watch?v=MIhF6Fh0AXw) on Dagster as an MLOps 
 ### Backend Service
 
 Once we the model is trained, we need to do build a backend API so that later we can deploy it to cloud. There are various tools available to do this, but one of the best one's is [BentoML](https://www.bentoml.com/) that provides an amazing way to package your API.
+
+![](https://raw.githubusercontent.com/Atharva-Phatak/shopme/main/images/bento-img.png)
+
 
 Here are the core components that go into a bento
 
@@ -91,12 +96,13 @@ Run service by following the below steps
 cd src/bento_service
 bentoml serve recommender_service.py:service --reload
 ```
-
+![](https://raw.githubusercontent.com/Atharva-Phatak/shopme/main/images/bento-service.png)
 * Define a benotfile.yaml to create a bento for the service.
 
 ```
 bentoml build
 ```
+![](https://raw.githubusercontent.com/Atharva-Phatak/shopme/main/images/bento-yam.png)
 
 * Dockerize the bento and check if it runs locally. Bento also provides nice SwaggerUI so that you can interact with your API.
 
@@ -118,8 +124,6 @@ Kubernetes is an amazing tool to deploy your docker applications and provides am
 
 * Run
 ```gcloud run <service-name> --image <name of the image in your project>```
-
-** add screenshot
 
 
 ### Frontend Service
