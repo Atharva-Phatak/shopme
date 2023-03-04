@@ -82,7 +82,9 @@ def gen_caption(data, idx):
 st.title(
     "**:blue[E2E: Fashion Recommendation System based on H&M data]**"
 )
-st.markdown("**_Code Available here:_**")
+st.markdown(
+    "**_Code Available here:_ https://github.com/Atharva-Phatak/shopme**"
+)
 
 
 img = st.file_uploader(
