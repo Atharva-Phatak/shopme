@@ -148,7 +148,7 @@ Since our whole training process is bunch of Ops compiled together, it would mak
 
 THings like formatting/linting code, etc are important to properly format code. This can all be automated using tools like [pre-commit](https://pre-commit.com/), which basically runs a bunch of tools for formatting and other services once you push a git commit.
 
-Note: Pre-commit is user very widely and can be customized according to need.
+Note: Pre-commit is used very widely and can be customized according to need.
 
 ---
 
