@@ -121,7 +121,7 @@ Kubernetes is an amazing tool to deploy your docker applications and provides am
 
 * Install [gcloud sdk](https://cloud.google.com/sdk/docs/install)
 
-* Follow the steps highlighted [here] to push docker image to [GCR](https://cloud.google.com/container-registry/docs/pushing-and-pulling)
+* Follow the steps to push docker image to [GCR](https://cloud.google.com/container-registry/docs/pushing-and-pulling)
 
 * Run
 ```gcloud run <service-name> --image <name of the image in your project>```
