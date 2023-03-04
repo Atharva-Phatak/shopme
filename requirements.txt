@@ -1,0 +1,10 @@
+torch
+torchvision
+timm
+dagster
+bentoml
+beautifulsoup4
+bentoml
+albumentations
+omegaconf
+scikit-learn

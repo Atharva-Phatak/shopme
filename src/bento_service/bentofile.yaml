@@ -1,0 +1,18 @@
+service: "recommender_service:svc"
+labels:
+  owner: atharva-phatak
+  stage: demo
+include:
+- "*.py"
+exclude:
+- "tests/"
+- "__pycache__/"
+python:
+  packages:
+    - scikit-learn
+    - albumentations
+    - Pillow
+    - onnx
+    - onnxruntime
+    - pydantic
+    - starlette==0.24.0

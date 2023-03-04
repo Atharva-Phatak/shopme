@@ -1,0 +1,8 @@
+artifact_path: path_to_model
+device: cuda
+data_path: path_to_data_store
+knn_model: fashion-knn
+onnx_model: product-embedder.onnx
+bento_embedding_model: bento-product-embedder
+input_size: 256
+num_workers: 0
