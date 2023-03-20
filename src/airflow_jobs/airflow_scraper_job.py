@@ -77,7 +77,6 @@ with DAG(
     schedule_interval="@once",
     catchup=False,
 ) as dag:
-
     baby_task = PythonOperator(
         task_id="baby_image_collection",
         python_callable=store_images,
