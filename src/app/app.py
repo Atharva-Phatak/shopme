@@ -7,7 +7,6 @@ import streamlit as st
 from PIL import Image
 from dotenv import load_dotenv
 
-
 load_dotenv()
 
 
