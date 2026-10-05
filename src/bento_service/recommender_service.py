@@ -5,7 +5,6 @@ from sklearn.preprocessing import normalize
 
 from constructs import ServiceOutput
 
-
 # creating runners for bentoapp
 embedder = bentoml.onnx.get(
     "bento-product-embedder:latest"
