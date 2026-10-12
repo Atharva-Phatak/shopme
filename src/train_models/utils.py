@@ -6,7 +6,6 @@ import numpy as np
 import torch
 from dotenv import load_dotenv
 
-
 load_dotenv("../params/.env")
 
 
